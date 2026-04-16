@@ -715,7 +715,7 @@ function FishingGame({userLevel,rodLevel,onCatch,onAction,limited,points:userPoi
 
   if(limited&&phase==="idle")return<LimitOverlay/>;
 
-  const baseTime = 6O + (ROD_UPGRADES[rodLevel-1]?.timeBonus||0);
+  const baseTime = 10 + (ROD_UPGRADES[rodLevel-1]?.timeBonus||0);
 
   function startFishing(){
     setPhase("casting");setResult(null);
